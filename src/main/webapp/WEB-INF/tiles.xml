@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<!-- Base Define -->
+	<definition name="userlayout"
+		template="/WEB-INF/views/user/layout.jsp">
+		<put-attribute name="link" value="/css/link/link.jsp" />
+		<put-attribute name="header"
+			value="/WEB-INF/common/user/header.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/common/user/footer.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="title" value="" />
+		<put-attribute name="headser"
+			value="/WEB-INF/basefragments/_header.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/basefragments/_menu.jsp" />
+	</definition>
+
+	<!-- Home Page -->
+	<definition name="homePage" extends="userlayout">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/user/home.jsp" />
+	</definition>
+
+	<definition name="forgotpassword" extends="userlayout">
+		<put-attribute name="title" value="Lấy lại mật khẩu" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/user/forgotpassword.jsp" />
+	</definition>
+	
+	<definition name="changepassword" extends="userlayout">
+		<put-attribute name="title" value="Lấy lại mật khẩu" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/user/changepassword.jsp" />
+	</definition>
+	
+	<definition name="noadmin" extends="userlayout">
+		<put-attribute name="title" value="Error" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/user/noadmin.jsp" />
+	</definition>
+	
+	<definition name="forgotpassword2" extends="userlayout">
+		<put-attribute name="title" value="Đổi mật khẩu" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/user/forgotpassword2.jsp" />
+	</definition>
+
+	<definition name="edituser" extends="userlayout">
+		<put-attribute name="title" value="Edit User" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/user/edituser.jsp" />
+	</definition>
+
+	<definition name="register" extends="userlayout">
+		<put-attribute name="title" value="Đăng kí" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/user/register.jsp" />
+	</definition>
+
+	<definition name="login" extends="userlayout">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/user/login.jsp" />
+	</definition>
+
+	<!-- ContactUs Page -->
+	<definition name="product" extends="userlayout">
+		<put-attribute name="title" value="Contact Us" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/user/product.jsp" />
+	</definition>
+
+	<definition name="productBrand" extends="userlayout">
+		<put-attribute name="title" value="Sản phẩm theo hãng" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/user/productbrand.jsp" />
+	</definition>
+
+	<definition name="productcategory" extends="userlayout">
+		<put-attribute name="title" value="Contact Us" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/user/productcategory.jsp" />
+	</definition>
+
+
+	<definition name="cart" extends="userlayout">
+		<put-attribute name="title" value="Contact Us" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/user/cart.jsp" />
+	</definition>
+
+
+	<definition name="order_information"
+		extends="userlayout">
+		<put-attribute name="title" value="Contact Us" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/user/order_information.jsp" />
+	</definition>
+
+	<definition name="OrderSuccess" extends="userlayout">
+		<put-attribute name="title" value="Contact Us" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/user/ordersuccess.jsp" />
+	</definition>
+	<definition name="user_order" extends="userlayout">
+		<put-attribute name="title" value="Order" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/user/user_order.jsp" />
+	</definition>
+
+	<definition name="user_order_detail"
+		extends="userlayout">
+		<put-attribute name="title" value="Order details" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/user/user_order_details.jsp" />
+	</definition>
+
+	<definition name="user_information"
+		extends="userlayout">
+		<put-attribute name="title" value="Order details" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/user/user_information.jsp" />
+	</definition>
+
+	<definition name="noproduct" extends="userlayout">
+		<put-attribute name="title" value="Order details" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/user/noproduct.jsp" />
+	</definition>
+
+
+	<definition name="product_detail" extends="userlayout">
+		<put-attribute name="title" value="Chi tiết sản phẩm" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/user/product_detail.jsp" />
+	</definition>
+
+	<definition name="productall" extends="userlayout">
+		<put-attribute name="title" value="Tất cả sản phẩm" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/user/productall.jsp" />
+	</definition>
+	
+	<definition name="resetpasssucces" extends="userlayout">
+		<put-attribute name="title" value="Đổi mật khẩu" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/user/resetpasssucces.jsp" />
+	</definition>
+
+	<definition name="adminlayout"
+		template="/WEB-INF/views/admin/admin.jsp">
+
+		<put-attribute name="linkadmin"
+			value="/css/link/linkadmin.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="title" value="" />
+
+	</definition>
+
+	<!-- Home Page -->
+	<definition name="homePage1" extends="adminlayout">
+		<put-attribute name="link"
+			value="/css/link/linkadmin.jsp" />
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user.jsp" />
+	</definition>
+
+	<definition name="editUser" extends="adminlayout">
+		<put-attribute name="link"
+			value="/css/link/linkadmin.jsp" />
+		<put-attribute name="title" value="EditUser" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/edituser.jsp" />
+	</definition>
+
+	<definition name="editCategory" extends="adminlayout">
+		<put-attribute name="link"
+			value="/css/link/linkadmin.jsp" />
+		<put-attribute name="title" value="Edit Category" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/editcategory.jsp" />
+	</definition>
+
+
+	<definition name="edituseradmin" extends="adminlayout">
+		<put-attribute name="link"
+			value="/css/link/linkadmin.jsp" />
+		<put-attribute name="title" value="Edit Category" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/edituser.jsp" />
+	</definition>
+
+	<definition name="listcategory" extends="adminlayout">
+		<put-attribute name="link"
+			value="/css/link/linkadmin.jsp" />
+		<put-attribute name="title" value="ListCategory" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/listcategory.jsp" />
+	</definition>
+
+	<definition name="formproductupdate" extends="adminlayout">
+		<put-attribute name="link"
+			value="/css/link/linkadmin.jsp" />
+		<put-attribute name="title" value="ListCategory" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/formproduct.jsp" />
+	</definition>
+
+	<definition name="listproduct" extends="adminlayout">
+		<put-attribute name="link"
+			value="/css/link/linkadmin.jsp" />
+		<put-attribute name="title" value="ListCategory" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/listproduct.jsp" />
+	</definition>
+
+	<definition name="orderall" extends="adminlayout">
+		<put-attribute name="link"
+			value="/css/link/linkadmin.jsp" />
+		<put-attribute name="title" value="ListCategory" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/orderall.jsp" />
+	</definition>
+
+	<definition name="orderdetail" extends="adminlayout">
+		<put-attribute name="link"
+			value="/css/link/linkadmin.jsp" />
+		<put-attribute name="title" value="ListCategory" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/orderdetail.jsp" />
+	</definition>
+
+
+	<definition name="orderwaiting" extends="adminlayout">
+		<put-attribute name="link"
+			value="/css/link/linkadmin.jsp" />
+		<put-attribute name="title" value="ListCategory" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/orderwaiting.jsp" />
+	</definition>
+
+	<definition name="orderdelivered" extends="adminlayout">
+		<put-attribute name="link"
+			value="/css/link/linkadmin.jsp" />
+		<put-attribute name="title" value="ListCategory" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/orderdelivered.jsp" />
+	</definition>
+
+	<definition name="ordercancel" extends="adminlayout">
+		<put-attribute name="link"
+			value="/css/link/linkadmin.jsp" />
+		<put-attribute name="title" value="ListCategory" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/ordercancel.jsp" />
+	</definition>
+
+	<definition name="productinsert" extends="adminlayout">
+		<put-attribute name="link"
+			value="/css/link/linkadmin.jsp" />
+		<put-attribute name="title" value="ListCategory" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/formproductinsert.jsp" />
+	</definition>
+	
+	<definition name="updateuser" extends="adminlayout">
+		<put-attribute name="link"
+			value="/css/link/linkadmin.jsp" />
+		<put-attribute name="title" value="ListCategory" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/updateuser.jsp" />
+	</definition>
+	
+	<definition name="insertcategory" extends="adminlayout">
+		<put-attribute name="link"
+			value="/css/link/linkadmin.jsp" />
+		<put-attribute name="title" value="ListCategory" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/insertcategory.jsp" />
+	</definition>
+	
+	<definition name="update-category" extends="adminlayout">
+		<put-attribute name="link"
+			value="/css/link/linkadmin.jsp" />
+		<put-attribute name="title" value="ListCategory" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/updatecategory.jsp" />
+	</definition>
+	
+	<definition name="listbrand" extends="adminlayout">
+		<put-attribute name="link"
+			value="/css/link/linkadmin.jsp" />
+		<put-attribute name="title" value="ListCategory" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/listbrand.jsp" />
+	</definition>
+	
+	<definition name="insertbrand" extends="adminlayout">
+		<put-attribute name="link"
+			value="/css/link/linkadmin.jsp" />
+		<put-attribute name="title" value="ListCategory" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/insertbrand.jsp" />
+	</definition>
+	
+	<definition name="updatebrand" extends="adminlayout">
+		<put-attribute name="link"
+			value="/css/link/linkadmin.jsp" />
+		<put-attribute name="title" value="ListCategory" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/updateBrand.jsp" />
+	</definition>
+	
+	<definition name="totalyear" extends="adminlayout">
+		<put-attribute name="link"
+			value="/css/link/linkadmin.jsp" />
+		<put-attribute name="title" value="ListCategory" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/totalyear.jsp" />
+	</definition>
+	
+	<definition name="statisticalproduct" extends="adminlayout">
+		<put-attribute name="link"
+			value="/css/link/linkadmin.jsp" />
+		<put-attribute name="title" value="ListCategory" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/statisticalproduct.jsp" />
+	</definition>
+	
+		<definition name="statisticaOrder" extends="adminlayout">
+		<put-attribute name="link"
+			value="/css/link/linkadmin.jsp" />
+		<put-attribute name="title" value="ListCategory" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/statisticaOrder.jsp" />
+	</definition>
+	
+	<definition name="testchart" extends="adminlayout">
+		<put-attribute name="link"
+			value="/css/link/linkadmin.jsp" />
+		<put-attribute name="title" value="ListCategory" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/testchart.jsp" />
+	</definition>
+	
+	<definition name="statisticaltotaldate" extends="adminlayout">
+		<put-attribute name="link"
+			value="/css/link/linkadmin.jsp" />
+		<put-attribute name="title" value="ListCategory" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/statisticaltotaldate.jsp" />
+	</definition>
+
+</tiles-definitions>
